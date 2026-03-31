@@ -36,7 +36,7 @@ export default function CaseStudies() {
           {cases.map((item) => (
             <article
               key={item.company}
-              className="rounded-3xl border border-brand-dark/10 bg-white p-8 shadow-soft"
+              className="rounded-4xl border border-brand-dark/8 bg-white p-6 shadow-card"
             >
               <h3 className="text-xl font-semibold text-brand-dark">{item.company}</h3>
 

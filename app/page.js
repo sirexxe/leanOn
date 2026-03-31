@@ -23,8 +23,8 @@ export default function HomePage() {
         <SolutionSection />
         <ResultsSection />
         <ProcessSection />
-        <LeadCTA />
         <CaseStudies />
+        <LeadCTA />
         <TeamSection />
         <FAQSection />
         <FinalCTA />

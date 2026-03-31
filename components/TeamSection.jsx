@@ -1,15 +1,17 @@
-export default function TeamSection() {
-  const team = [
-    {
-      name: "Ezequiel Nicolás",
-      role: "Sales Strategy & Playbook Design",
-    },
-    {
-      name: "Yolanda Perez",
-      role: "Revenue Process & Commercial Operations",
-    },
-  ];
+const team = [
+  {
+    name: "Ezequiel Nicolás",
+    role: "Sales Strategy & Playbook Design",
+    bio: "Especialista en diseño de sistemas comerciales para startups en etapa temprana. Ha trabajado con equipos de ventas en contextos B2B SaaS, ayudando a founders a convertir su intuición comercial en procesos replicables.",
+  },
+  {
+    name: "Yolanda Perez",
+    role: "Revenue Process & Commercial Operations",
+    bio: "Experta en operaciones de revenue y estructuración de pipelines. Combina visión de proceso con ejecución táctica para que los sistemas comerciales funcionen en el día a día, no solo en el papel.",
+  },
+];
 
+export default function TeamSection() {
   return (
     <section id="equipo" className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -21,8 +23,8 @@ export default function TeamSection() {
             Experiencia para etapas donde cada decisión comercial importa.
           </h2>
           <p className="mt-4 text-lg text-brand-dusty">
-            En Lean On trabajamos con startups en momentos donde estructurar ventas correctamente cambia
-            el ritmo de crecimiento.
+            En Lean On trabajamos con startups en momentos donde estructurar ventas correctamente
+            cambia el ritmo de crecimiento.
           </p>
         </div>
 
@@ -32,7 +34,7 @@ export default function TeamSection() {
               key={person.name}
               className="rounded-3xl border border-brand-dark/10 bg-brand-snow p-8"
             >
-              <div className="flex h-20 w-20 items-center justify-center rounded-full bg-brand-dark text-lg font-semibold text-brand-snow">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-brand-dark text-sm font-semibold text-brand-snow">
                 {person.name
                   .split(" ")
                   .map((word) => word[0])
@@ -40,8 +42,9 @@ export default function TeamSection() {
                   .join("")}
               </div>
 
-              <h3 className="mt-6 text-xl font-semibold text-brand-dark">{person.name}</h3>
-              <p className="mt-2 text-sm text-brand-dusty">{person.role}</p>
+              <h3 className="mt-5 text-xl font-semibold text-brand-dark">{person.name}</h3>
+              <p className="mt-1 text-sm font-medium text-brand-lava">{person.role}</p>
+              <p className="mt-4 text-sm leading-7 text-brand-dusty">{person.bio}</p>
             </div>
           ))}
         </div>

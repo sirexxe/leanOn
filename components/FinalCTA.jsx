@@ -12,7 +12,7 @@ export default function FinalCTA() {
           Si vender depende de intuición, es momento de construir un sistema.
         </h2>
 
-        <p className="mt-4 text-lg text-brand-dusty">
+        <p className="mt-4 text-lg leading-8 text-brand-dusty">
           En Lean On podemos ayudarte a identificar dónde está la fricción y qué playbook necesitas
           para la siguiente etapa.
         </p>
@@ -22,7 +22,7 @@ export default function FinalCTA() {
             href={CALENDLY_URL}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center justify-center rounded-full bg-brand-lava px-6 py-3.5 text-sm font-medium text-brand-snow transition hover:opacity-90"
+            className="inline-flex items-center justify-center rounded-full bg-brand-lava px-6 py-3.5 text-sm font-medium text-brand-snow shadow-soft transition duration-200 hover:-translate-y-0.5 hover:opacity-95"
           >
             Reservar diagnóstico
           </a>

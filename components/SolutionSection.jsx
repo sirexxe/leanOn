@@ -34,7 +34,7 @@ export default function SolutionSection() {
           {items.map((item) => (
             <div
               key={item.title}
-              className="rounded-3xl border border-brand-dark/10 bg-white p-6 shadow-soft"
+              className="rounded-4xl border border-brand-dark/8 bg-white p-6 shadow-card"
             >
               <h3 className="text-lg font-semibold text-brand-dark">{item.title}</h3>
               <p className="mt-3 text-sm leading-7 text-brand-dusty">{item.text}</p>

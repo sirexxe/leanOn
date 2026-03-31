@@ -1,13 +1,13 @@
-export default function ProblemSection() {
-  const problems = [
-    "El founder cierra la mayoría de ventas",
-    "Cada conversación comercial es distinta",
-    "No hay criterios claros en el pipeline",
-    "El equipo no replica lo que funciona",
-    "No se aprende de los deals perdidos",
-    "El crecimiento depende de improvisación",
-  ];
+const problems = [
+  "El founder cierra la mayoría de ventas",
+  "Cada conversación comercial es distinta",
+  "No hay criterios claros en el pipeline",
+  "El equipo no replica lo que funciona",
+  "No se aprende de los deals perdidos",
+  "El crecimiento depende de improvisación",
+];
 
+export default function ProblemSection() {
   return (
     <section className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -23,12 +23,16 @@ export default function ProblemSection() {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
           {problems.map((problem) => (
             <div
               key={problem}
-              className="rounded-3xl border border-brand-dark/10 bg-brand-snow p-6"
+              className="flex items-start gap-4 rounded-4xl border border-brand-dark/8 bg-brand-snow p-6"
             >
+              <span
+                className="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-brand-lava/50"
+                aria-hidden="true"
+              />
               <p className="text-base font-medium text-brand-dark">{problem}</p>
             </div>
           ))}

@@ -8,4 +8,12 @@ html {
 body {
   background: #fbfbfb;
   color: #151419;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #f56e0f;
+  color: #fbfbfb;
 }

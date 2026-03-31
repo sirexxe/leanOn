@@ -18,6 +18,10 @@ module.exports = {
       },
       boxShadow: {
         soft: "0 8px 30px rgba(0,0,0,0.08)",
+        card: "0 12px 40px rgba(21,20,25,0.06)",
+      },
+      letterSpacing: {
+        tightest: "-0.04em",
       },
     },
   },

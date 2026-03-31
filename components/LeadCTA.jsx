@@ -4,7 +4,7 @@ export default function LeadCTA() {
   return (
     <section id="lead" className="bg-white py-24">
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
-        <div className="rounded-[2rem] border border-brand-dark/10 bg-brand-lava px-8 py-12 text-brand-snow sm:px-12">
+        <div className="rounded-4xl border border-brand-dark/10 bg-brand-lava px-8 py-12 text-brand-snow sm:px-12">
           <p className="text-sm font-medium uppercase tracking-[0.18em] text-brand-snow/70">
             Diagnóstico
           </p>

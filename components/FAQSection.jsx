@@ -38,12 +38,22 @@ export default function FAQSection() {
           {faqs.map((faq) => (
             <details
               key={faq.question}
-              className="group rounded-3xl border border-brand-dark/10 bg-white p-6"
+              className="group rounded-4xl border border-brand-dark/8 bg-brand-snow"
             >
-              <summary className="cursor-pointer list-none text-base font-medium text-brand-dark">
+              <summary className="flex cursor-pointer list-none items-center justify-between p-6 text-base font-medium text-brand-dark">
                 {faq.question}
+                <svg
+                  className="ml-6 h-4 w-4 shrink-0 text-brand-dusty transition-transform duration-200 group-open:rotate-180"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  aria-hidden="true"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
               </summary>
-              <p className="mt-4 text-sm leading-7 text-brand-dusty">{faq.answer}</p>
+              <p className="px-6 pb-6 text-sm leading-7 text-brand-dusty">{faq.answer}</p>
             </details>
           ))}
         </div>
