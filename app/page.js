@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
+import HeroSection from "@/components/HeroSection";
 import Credibility from "@/components/Credibility";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
@@ -17,7 +17,7 @@ export default function HomePage() {
     <>
       <Header />
       <main>
-        <Hero />
+        <HeroSection />
         <Credibility />
         <ProblemSection />
         <SolutionSection />
