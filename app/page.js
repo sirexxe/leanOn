@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import Credibility from "@/components/Credibility";
 import ProblemSection from "@/components/ProblemSection";
-import SolutionSection from "@/components/SolutionSection";
+import WhatWeDoSection from "@/components/WhatWeDoSection";
 import ResultsSection from "@/components/ResultsSection";
 import ProcessSection from "@/components/ProcessSection";
 import LeadCTA from "@/components/LeadCTA";
@@ -20,7 +20,7 @@ export default function HomePage() {
         <HeroSection />
         <Credibility />
         <ProblemSection />
-        <SolutionSection />
+        <WhatWeDoSection />
         <ResultsSection />
         <ProcessSection />
         <CaseStudies />
