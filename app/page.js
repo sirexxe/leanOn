@@ -4,7 +4,7 @@ import Credibility from "@/components/Credibility";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
 import ResultsSection from "@/components/ResultsSection";
-import ProcessSection from "@/components/ProcessSection";
+import ProcesoSection from "@/components/ProcesoSection";
 import LeadCTA from "@/components/LeadCTA";
 import CaseStudies from "@/components/CaseStudies";
 import TeamSection from "@/components/TeamSection";
@@ -22,7 +22,7 @@ export default function HomePage() {
         <ProblemSection />
         <SolutionSection />
         <ResultsSection />
-        <ProcessSection />
+        <ProcesoSection />
         <CaseStudies />
         <LeadCTA />
         <TeamSection />
