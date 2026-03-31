@@ -28,18 +28,18 @@ export default function HeroSection() {
       />
 
       {/* Contenido centrado */}
-      <div className="relative z-10 px-6 py-16 text-center lg:py-24">
+      <div className="relative z-10 px-6 pb-16 pt-36 lg:pb-24 lg:pt-44">
         <div
-          className={`mx-auto max-w-2xl ${visible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
+          className={`mx-auto flex max-w-3xl flex-col items-center text-center ${visible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
           style={{ transition: 'opacity 0.6s ease, transform 0.6s ease' }}
         >
           {/* Eyebrow pill */}
-          <span className="mb-5 inline-block rounded-full border border-brand-lava px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-brand-lava">
+          <span className="mb-6 inline-block rounded-full border border-brand-lava px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-brand-lava">
             Fractional Head of Sales · España &amp; LATAM
           </span>
 
           {/* H1 */}
-          <h1 className="mb-5 text-3xl font-semibold leading-tight text-brand-snow md:text-4xl lg:text-5xl">
+          <h1 className="mb-6 text-4xl font-semibold leading-tight tracking-tightest text-brand-snow md:text-5xl lg:text-6xl">
             Eres el mejor vendedor de tu empresa.{' '}
             <em className="not-italic text-brand-lava">
               El problema es que no debería ser así.
@@ -47,30 +47,22 @@ export default function HeroSection() {
           </h1>
 
           {/* Subheadline */}
-          <p className="mx-auto mb-8 max-w-xl text-base leading-relaxed text-brand-dusty md:text-lg">
+          <p className="mb-10 max-w-xl text-base leading-relaxed text-brand-dusty md:text-lg">
             Construimos el sistema comercial que te permite escalar y cumplir tus objetivos.
           </p>
 
-          {/* CTAs */}
-          <div className="flex flex-wrap justify-center gap-3">
-            <a
-              href={CALENDLY_URL} // TODO: reemplazar con URL de Calendly definitiva
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-md bg-brand-lava px-6 py-3 text-sm font-semibold text-brand-snow transition duration-200 hover:-translate-y-0.5 hover:opacity-95"
-            >
-              Quiero mi sales playbook
-            </a>
-            <a
-              href="#proceso"
-              className="rounded-md border border-neutral-700 px-6 py-3 text-sm font-medium text-neutral-300 transition-colors hover:border-neutral-500 hover:text-white"
-            >
-              Ver The Lean Stack
-            </a>
-          </div>
+          {/* CTA */}
+          <a
+            href={CALENDLY_URL} // TODO: reemplazar con URL de Calendly definitiva
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-md bg-brand-lava px-8 py-3.5 text-sm font-semibold text-brand-snow transition duration-200 hover:-translate-y-0.5 hover:opacity-95"
+          >
+            Quiero mi sales playbook
+          </a>
 
           {/* Nota geográfica */}
-          <p className="mt-3 text-xs text-neutral-600">· España · Argentina · México</p>
+          <p className="mt-4 text-xs text-brand-snow/40">· España · Argentina · México</p>
         </div>
       </div>
 
