@@ -184,7 +184,7 @@ export default function WhatWeDoSection() {
         {/* Footer strip */}
         <div
           ref={footerRef}
-          className={`flex flex-col items-start justify-between gap-4 rounded-xl bg-[#f9f8f6] px-6 py-5 transition-all duration-500 ease-out sm:flex-row sm:items-center ${
+          className={`flex flex-col items-start justify-between gap-4 rounded-xl bg-[#FEF0E6] px-6 py-5 transition-all duration-500 ease-out sm:flex-row sm:items-center ${
             footerInView ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
           }`}
           style={{ transitionDelay: `${4 * 80}ms` }}
