@@ -6,7 +6,7 @@ import WhatWeDoSection from "@/components/WhatWeDoSection";
 import OutcomesSection from "@/components/OutcomesSection";
 import ProcessSection from "@/components/ProcessSection";
 import LeadCTA from "@/components/LeadCTA";
-import CaseStudies from "@/components/CaseStudies";
+import CasosSection from "@/components/CasosSection";
 import TeamSection from "@/components/TeamSection";
 import FAQSection from "@/components/FAQSection";
 import FinalCTA from "@/components/FinalCTA";
@@ -23,7 +23,7 @@ export default function HomePage() {
         <WhatWeDoSection />
         <OutcomesSection />
         <ProcessSection />
-        <CaseStudies />
+        <CasosSection />
         <LeadCTA />
         <TeamSection />
         <FAQSection />
