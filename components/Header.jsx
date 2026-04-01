@@ -27,13 +27,13 @@ export default function Header() {
 
         <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-10 md:flex">
           <a href="#servicios" className="text-sm text-neutral-300 transition-colors hover:text-white">
-            Método
+            El método
           </a>
           <a href="#equipo" className="text-sm text-neutral-300 transition-colors hover:text-white">
-            Equipo
+            Nuestro Equipo
           </a>
-          <a href="#contacto" className="text-sm text-neutral-300 transition-colors hover:text-white">
-            Contacto
+          <a href="#lead-cta" className="text-sm text-neutral-300 transition-colors hover:text-white">
+            Contáctanos
           </a>
         </nav>
 

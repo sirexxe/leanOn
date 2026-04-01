@@ -15,13 +15,13 @@ export default function Footer() {
 
           <div className="flex flex-wrap gap-6 text-sm text-brand-snow/70">
             <a href="#servicios" className="transition hover:text-brand-snow">
-              Servicios
+              El método
             </a>
             <a href="#equipo" className="transition hover:text-brand-snow">
-              Equipo
+              Nuestro Equipo
             </a>
             <a href="#contacto" className="transition hover:text-brand-snow">
-              Contacto
+              Contáctanos
             </a>
           </div>
         </div>
