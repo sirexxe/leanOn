@@ -45,3 +45,11 @@ body {
 .flip-card-back {
   transform: rotateY(180deg);
 }
+
+/* WCAG 2.4.7 — Focus visible mínimo 3:1 */
+/* #c2550a sobre fondos claros: 3.96:1 ✓ · sobre fondos dark: 4.29:1 ✓ */
+:focus-visible {
+  outline: 2px solid #c2550a;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
