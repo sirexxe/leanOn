@@ -16,10 +16,6 @@ const checks = [
     title: "Conclusiones que te llevas",
     desc: "Aunque no sigamos trabajando juntos, sales con algo accionable. Sin trampa.",
   },
-  {
-    title: "Basado en +45 startups",
-    desc: "El mismo patrón de diagnóstico que usamos antes de arrancar con cada cliente.",
-  },
 ]
 
 const trustAnchors = [
@@ -65,9 +61,9 @@ export default function LeadCTASection() {
       <section
         id="lead-cta"
         aria-labelledby="lead-cta-heading"
-        className="bg-[#0e0e0e] py-20 px-6"
+        className="bg-[#0e0e0e] py-20"
       >
-        <div className="max-w-5xl mx-auto">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
           {/* Header centrado */}
           <div
@@ -77,7 +73,7 @@ export default function LeadCTASection() {
             }`}
           >
             {/* Eyebrow — brand-lava (#F56E0F) sobre #0e0e0e: ~6.3:1 ✓ AA */}
-            <p className="text-[10px] font-medium tracking-[0.12em] uppercase text-brand-lava mb-4">
+            <p className="text-sm font-medium tracking-[0.18em] uppercase text-brand-lava mb-4">
               Decode · Sesión gratuita
             </p>
 
@@ -105,25 +101,16 @@ export default function LeadCTASection() {
           </div>
 
           {/* Split principal */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
 
             {/* Columna izquierda */}
             <div
               ref={leftRef}
-              className={`transition-all duration-500 ease-out ${
+              className={`flex flex-col justify-between pt-6.25 transition-all duration-500 ease-out ${
                 leftInView ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
               }`}
               style={{ transitionDelay: '100ms' }}
             >
-              {/* Título columna — #888 sobre #0e0e0e: 4.8:1 ✓ AA */}
-              <p className="text-[14px] font-medium text-[#888] mb-6 leading-snug">
-                Una sesión donde analizamos{' '}
-                {/* #f0efe8 sobre #0e0e0e: 17.2:1 ✓ AAA */}
-                <em className="not-italic text-[#f0efe8]">
-                  tu situación comercial real.
-                </em>
-              </p>
-
               {/* Checklist semántica — WCAG 1.3.1 */}
               <ul
                 role="list"
@@ -139,18 +126,18 @@ export default function LeadCTASection() {
                     {/* brand-lava border sobre #0e0e0e: ~6.3:1 ✓ AA (UI component) */}
                     <div
                       aria-hidden="true"
-                      className="w-5 h-5 rounded-full border border-brand-lava flex items-center justify-center shrink-0 mt-0.5"
+                      className="w-5 h-5 rounded-full border border-brand-lava flex items-center justify-center shrink-0 mt-0.5 opacity-40"
                     >
                       <div className="w-1.5 h-1.5 rounded-full bg-brand-lava" />
                     </div>
 
                     <div>
                       {/* #d0cfc8 sobre #0e0e0e: 12.1:1 ✓ AAA */}
-                      <p className="text-[13px] font-medium text-[#d0cfc8] mb-1">
+                      <p className="text-sm font-medium text-[#d0cfc8] mb-1">
                         {c.title}
                       </p>
                       {/* #a0a09a sobre #0e0e0e: 6.8:1 ✓ AA */}
-                      <p className="text-[12px] text-[#a0a09a] leading-relaxed">
+                      <p className="text-sm text-[#a0a09a] leading-relaxed">
                         {c.desc}
                       </p>
                     </div>
@@ -158,23 +145,11 @@ export default function LeadCTASection() {
                 ))}
               </ul>
 
-              {/* Quote semántica — WCAG 1.3.1 */}
-              <blockquote className="mt-8 pt-6 border-t border-[#1a1a17]">
-                {/* #888 sobre #0e0e0e: 4.8:1 ✓ AA */}
-                <p className="text-[12px] text-[#888] leading-relaxed italic mb-2">
-                  {quote.text}
-                </p>
-                {/* #777 sobre #0e0e0e: 4.2:1 ✓ AA (texto de soporte) */}
-                <cite className="text-[11px] font-medium text-[#777] not-italic">
-                  — {quote.autor}
-                </cite>
-              </blockquote>
-
               {/* Trust anchors — WCAG 1.3.1 + 4.1.2 */}
               <div
                 role="list"
                 aria-label="Datos de la sesión Decode"
-                className="mt-6 flex gap-6"
+                className="flex-1 mt-8 pt-6 border-t border-[#1a1a17] flex items-center gap-12"
               >
                 {trustAnchors.map((t) => (
                   <div
@@ -185,20 +160,32 @@ export default function LeadCTASection() {
                     {/* #f0efe8 sobre #0e0e0e: 17.2:1 ✓ AAA */}
                     <p
                       aria-hidden="true"
-                      className="text-[18px] font-semibold text-[#f0efe8] leading-none tracking-tight"
+                      className="text-5xl font-semibold text-[#f0efe8] leading-none tracking-tight"
                     >
                       {t.val}
                     </p>
                     {/* #888 sobre #0e0e0e: 4.8:1 ✓ AA */}
                     <p
                       aria-hidden="true"
-                      className="text-[10px] text-[#888] mt-1"
+                      className="text-sm text-[#888] mt-2"
                     >
                       {t.label}
                     </p>
                   </div>
                 ))}
               </div>
+
+              {/* Quote semántica — WCAG 1.3.1 */}
+              <blockquote className="mt-8 pt-6 border-t border-[#1a1a17]">
+                {/* #888 sobre #0e0e0e: 4.8:1 ✓ AA */}
+                <p className="text-sm text-[#888] leading-relaxed italic mb-2">
+                  {quote.text}
+                </p>
+                {/* #777 sobre #0e0e0e: 4.2:1 ✓ AA (texto de soporte) */}
+                <cite className="text-xs font-medium text-[#777] not-italic">
+                  — {quote.autor}
+                </cite>
+              </blockquote>
             </div>
 
             {/* Columna derecha — CalendarBox */}
