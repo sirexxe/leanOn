@@ -78,7 +78,7 @@ function CasoRow({ caso, index, isLast, visible }) {
 
   return (
     <div
-      className={`group py-10 border-t border-[#f0eeea] grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start transition-all duration-200 hover:bg-[#fdfcfb] -mx-4 px-4 rounded-lg ${
+      className={`group py-10 border-t border-[#f0eeea] grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start transition-all duration-200 hover:bg-[#fdfcfb] -mx-6 px-6 lg:-mx-8 lg:px-8 rounded-lg ${
         isLast ? 'border-b border-[#f0eeea]' : ''
       } ${visible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
       style={{ transitionDelay: `${index * 100}ms`, transition: 'opacity 0.5s ease-out, transform 0.5s ease-out, background-color 0.2s ease-in-out' }}
@@ -94,12 +94,12 @@ function CasoRow({ caso, index, isLast, visible }) {
           </span>
         </div>
 
-        <h3 className="text-[18px] md:text-[20px] font-semibold text-[#0a0a0a] leading-tight tracking-tight mb-4">
+        <h3 className="text-lg md:text-xl font-semibold text-[#0a0a0a] leading-tight tracking-tight mb-4">
           {before}
           <em className="not-italic text-brand-lava">{caso.quoteEmphasis}</em>
         </h3>
 
-        <p className="text-[12px] text-[#999] leading-relaxed italic pl-3 border-l-2 border-[#f0eeea]">
+        <p className="text-sm text-[#999] leading-relaxed italic pl-3 border-l-2 border-[#f0eeea]">
           {caso.contexto}
         </p>
       </div>
@@ -110,7 +110,7 @@ function CasoRow({ caso, index, isLast, visible }) {
           <p className="text-[9px] font-medium uppercase tracking-[0.1em] text-[#bbb] mb-1.5">
             Problema
           </p>
-          <p className="text-[12px] text-[#888] leading-relaxed">
+          <p className="text-sm text-[#888] leading-relaxed">
             {caso.problema}
           </p>
         </div>
@@ -119,7 +119,7 @@ function CasoRow({ caso, index, isLast, visible }) {
           <p className="text-[9px] font-medium uppercase tracking-[0.1em] text-[#bbb] mb-1.5">
             Intervención
           </p>
-          <p className="text-[12px] text-[#888] leading-relaxed">
+          <p className="text-sm text-[#888] leading-relaxed">
             {caso.intervencion}
           </p>
         </div>
@@ -128,7 +128,7 @@ function CasoRow({ caso, index, isLast, visible }) {
           <p className="text-[9px] font-medium uppercase tracking-[0.1em] text-brand-lava mb-1.5">
             Resultado
           </p>
-          <p className="text-[12px] text-[#0a0a0a] leading-relaxed font-medium">
+          <p className="text-sm text-[#0a0a0a] leading-relaxed font-medium">
             <strong className="text-brand-lava font-semibold">{caso.resultadoEmphasis}</strong>
             {' '}{resultoBefore}
           </p>
@@ -156,8 +156,8 @@ export default function CasosSection() {
   const [listRef, listInView] = useInView()
 
   return (
-    <section id="casos" className="bg-white py-20 px-6">
-      <div className="max-w-5xl mx-auto">
+    <section id="casos" className="bg-white py-20">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
         {/* Header */}
         <div
@@ -166,7 +166,7 @@ export default function CasosSection() {
             headerInView ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
           }`}
         >
-          <p className="text-[10px] font-medium tracking-[0.12em] uppercase mb-4 text-brand-lava">
+          <p className="text-sm font-medium tracking-[0.18em] uppercase mb-4 text-brand-lava">
             Casos reales
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold leading-tight tracking-tight text-[#0a0a0a] mb-3">
