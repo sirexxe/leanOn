@@ -62,7 +62,7 @@ export default function HeroSection() {
           </a>
 
           {/* Nota geográfica */}
-          <p className="mt-4 text-xs text-brand-snow/40">· España · Argentina · México</p>
+          <p className="mt-4 text-xs text-brand-snow/40">· España · LATAM</p>
         </div>
       </div>
 

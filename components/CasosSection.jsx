@@ -33,21 +33,6 @@ const casos = [
       { valor: "6w", label: "tiempo al resultado" },
     ],
   },
-  {
-    sector: "HR Tech · Seed",
-    mercado: "México",
-    quote: "Actividad sin sistema no es pipeline.",
-    quoteEmphasis: "no es pipeline.",
-    contexto: "«Teníamos un AE trabajando duro. Pero el CRM era un cementerio. No sabíamos qué iba a cerrar ni cuándo.»",
-    problema: "CRM sin criterios de avance. Forecast imposible. AE tardaba 4 meses en ser productivo.",
-    intervencion: "ICP Scoring + criterios de stage + playbook de discovery completo.",
-    resultado: "Rampa reducida de 4 meses a 6 semanas. Pipeline predecible en 30 días.",
-    resultadoEmphasis: "4 meses a 6 semanas",
-    metricas: [
-      { valor: "−10w", label: "rampa AE" },
-      { valor: "30d", label: "forecast activo" },
-    ],
-  },
 ]
 
 function useInView() {

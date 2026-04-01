@@ -199,7 +199,7 @@ export default function TeamSection() {
             Juntos hemos trabajado con{' '}
             {/* #0a0a0a sobre #fff: ratio 19.6:1 ✓ AAA */}
             <strong className="text-[#0a0a0a] font-medium">+45 startups</strong>
-            <br />en España, Argentina y México.<br />
+            <br />en España y LATAM.<br />
             El patrón siempre es el mismo — y el sistema funciona.
           </p>
 
