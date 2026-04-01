@@ -21,7 +21,13 @@ body {
 /* Flip cards — WhatWeDoSection */
 .flip-card-inner {
   transform-style: preserve-3d;
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flip-card-inner {
+    transition: none;
+  }
 }
 
 .flip-card:hover .flip-card-inner {
